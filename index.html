@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/agustina" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+    <div class="curzr" hidden></div>
+    <header class="container header active" id="home">
+        <div class="brand-name">&nbsp;Srijan Sinha</div>
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/PHOTO.jpg" alt="Profile">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Srijan Sinha.<br>A</span><span class="dynamic-text"></span>
+                </h1>
+                <p>
+                    I'm a Web Developer with an engineer’s logic and an artist’s eye—blending structure with style to craft elegant, functional websites.
+                    <br>An ECE brain wired for innovation, but my real spark? It ignites when I’m painting pixels and shaping ideas into immersive web experiences.</br>
+                    Every line of code is a brushstroke, and the browser is my canvas.
+                </p>
+                <div class="btn-con">
+                    <a href="Profile.pdf" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        I'm a student by day, a web weaver by passion, crafting digital worlds with a creative spark.  
+                        With a pencil in hand, I bring imagination to life through art and sketches.  
+                        The rush of the game fuels me—I live for the adrenaline of sports.  
+                        Travel is my escape, where every journey becomes a story worth telling.  
+                        Blending logic, art, and adventure, I'm on a mission to design life beautifully.
+                    </p>
+                    <div class="btn-con">
+                        <a href="Profile.pdf" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                      <pre><span class="pink">const</span> <span class="white">coder</span> <span class="pink">=</span> <span class="offwhite">{</span>
+    <span class="white">name:</span> <span class="offwhite">'</span><span class="yellow">Srijan Sinha</span><span class="offwhite">'</span><span class="offwhite">,</span>
+    <span class="white">skills:</span><span class="offwhite">[</span><span class="offwhite">'</span><span class="yellow">React</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">Swift</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">Python</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">Express</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">NodeJS</span><span class="offwhite">'</span><span class="offwhite">,</span>
+    <span class="offwhite">'</span><span class="yellow">MySql</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">MongoDB</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">Docker</span><span class="offwhite">'</span><span class="offwhite">,</span> <span class="offwhite">'</span><span class="yellow">AWS</span><span class="offwhite">'</span><span class="offwhite">],</span>
+    <span class="white">hardWorker</span><span class="pink">:</span> <span class="orange">true</span><span class="offwhite">,</span>
+    <span class="white">quickLearner</span><span class="pink">:</span> <span class="orange">true</span><span class="offwhite">,</span>
+    <span class="white">problemSolver</span><span class="pink">:</span> <span class="orange">true</span><span class="offwhite">,</span>
+    <span class="green">hireable</span><span class="pink">:</span> <span class="orange">function</span><span class="offwhite">()</span> <span class="offwhite">{</span>
+        <span class="orange">return</span> <span class="offwhite">(</span>
+            <span class="blue">this</span><span class="white">.hardWorker</span> <span class="yellow">&amp;&amp;</span>
+            <span class="blue">this</span><span class="white">.problemSolver</span> <span class="yellow">&amp;&amp;</span>
+            <span class="blue">this</span><span class="white">.skills.length</span> <span class="yellow">&gt;=</span> <span class="orange">5</span>
+         <span class="offwhite">);</span>
+      <span class="offwhite">};</span>
+    <span class="offwhite">};</span>
+                      </pre>
+                    </div>
+                  </div>
+                  
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-html5 skill-icon"></i>  html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-css3-alt skill-icon"></i> css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-js skill-icon"></i> javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-react skill-icon"></i> ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-node-js skill-icon"></i> NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">87%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><i class="fab fa-python skill-icon"></i> Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skills-ribbon-wrapper">
+                    <div class="skills-ribbon">
+                      <div class="skills-ribbon-content">
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span><i class="fab fa-react"></i> React</span>
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span><i class="fas fa-server"></i> Express.js</span>
+                        <span><i class="fas fa-wind"></i> Tailwind.css</span>
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span><i class="fas fa-code"></i> Typescript</span>
+                        <span><i class="fab fa-figma"></i> Figma</span>
+                        <span><i class="fab fa-java"></i> Java</span>
+                  
+                        <!-- Duplicate for seamless scroll -->
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span><i class="fab fa-react"></i> React</span>
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span><i class="fas fa-server"></i> Express.js</span>
+                        <span><i class="fas fa-wind"></i> Tailwind.css</span>
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span><i class="fas fa-code"></i> Typescript</span>
+                        <span><i class="fab fa-figma"></i> Figma</span>
+                        <span><i class="fab fa-java"></i> Java</span>
+
+                        <!-- Duplicate for seamless scroll -->
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span><i class="fab fa-react"></i> React</span>
+                        <span><i class="fab fa-node-js"></i> Node.js</span>
+                        <span><i class="fas fa-server"></i> Express.js</span>
+                        <span><i class="fas fa-wind"></i> Tailwind.css</span>
+                        <span><i class="fab fa-git-alt"></i> Git</span>
+                        <span><i class="fas fa-code"></i> Typescript</span>
+                        <span><i class="fab fa-figma"></i> Figma</span>
+                        <span><i class="fab fa-java"></i> Java</span>
+
+
+                      </div>
+                    </div>
+                  </div>
+                     
+                  
+                  
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration">2010-2020</p>
+                    <h5>Secondary Education<span> - ARKMHS</span></h5>
+                    <p>
+                        My journey of learning and values began at Asansol Ramakrishna Mission High School, where I completed my secondary education with pride.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <p class="tl-duration">2020-2022</p>
+                    <h5>Higher-Secondary Education<span> - BRKI</span></h5>
+                    <p>
+                        Nurtured by knowledge and ambition, I completed my higher secondary education at Barchatra Ramkanai Institute — a place where learning met purpose.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2022-Present</p>
+                    <h5>Electronics & Communication Degree<span> - AEC</span></h5>
+                    <p>
+                        Currently navigating the dynamic world of Electronics and Communication Engineering at Asansol Engineering College, where innovation meets imagination.
+                    </p>
+                </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://cdn.dribbble.com/userupload/21779227/file/original-9d2425d7d74b2ae74b26721d1ced39ea.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>PROJECT-GUIDE</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/project-guide" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://projectguide.netlify.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://cdn.dribbble.com/userupload/20801512/file/original-17f11f97f02777e64a6170290a299322.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>CHAT-APP</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/Chatapp" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://chatapp12345.netlify.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://cdn.dribbble.com/userupload/23320577/file/original-36400519305b46673d4820aeda34b257.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>RETRO-TUNES</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/Retro-tunes" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://retro-music.netlify.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3RjZm91NGlxeTByaXN0N2NsMWVxeHlpOTd2aHh1OTNyOWFkMXlldSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jsry9gJPvIJH2jhlIG/giphy.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>CROSSY-ROAD-CLONE</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/Crossyroad" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://crossyroadio.netlify.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWZ2YmNwZDQxOHFrbjlrbm1yN2s3Nmw0ZWtlMWN1OTY0aXVldWpuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zw69pUViBZCZW/giphy.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>MIND-MATE</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/mindmate-mood-flow" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://mindmate-mood-flow.lovable.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://recycletek.co/assets/truckGifReduced-TKtccLwL.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>ECO-WASTE</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/ECOWASTE" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://ecowaste-s3i2.vercel.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="https://www.icegif.com/wp-content/uploads/2023/02/icegif-966.gif" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>QUICK-NOTES</h3>
+                        <div class="icons">
+                            <a href="https://github.com/XYNOS7/sticky-notes" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://v0-background-paths-chi-silk.vercel.app" class="icon">
+                                <i class="fas fa-link"></i>
+                            </a>
+                            <a href="" class="icon info-btn">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                
+   
+
+
+
+            </div>
+                <div class="ribbon-wrapper">
+                  <div class="ribbon ribbon-top">
+                    <div class="ribbon-content">
+                        <span>✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span> 
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                    </div>
+                  </div>
+                  <div class="ribbon ribbon-bottom">
+                    <div class="ribbon-content">
+                        <span>✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span> 
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                        <span>&nbsp; NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦ NEW PROJECTS ARE LOADING ✦</span>
+                    </div>
+                  </div>
+                </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Dreaming of your own online space?🌐✨<br>How do you craft a stunning website from scratch?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                What does it take to turn pixels into poetry?<br>How does one master the art of web design beyond just code and color?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Can you really become a web developer in just 10 days?What if a keyboard, curiosity, and caffeine are all you need?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Ever wondered how to spot and fix bugs in seconds?What if debugging felt like a superpower—thanks to Web Inspector?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Ready to turn ideas into stunning interfaces?What’s stopping you from diving into the world of Web and UI Design today?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Curious what makes a website truly wow?Ready to unlock the secrets behind stunning web design?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Reach Me</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Got questions or sparks of curiosity?<br>Don't hesitate—drop me a message and let's connect the dots!
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location :</span>
+                                </div>
+                                <span> Asansol, West-Bengal</span>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email :</span>
+                                </div>
+                                <p>
+                                    <span> srijansinha021@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education :</span>
+                                </div>
+                                <p>
+                                    <span> Asansol Engineering College, West-Bengal</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number :</span>
+                                </div>
+                                <p>
+                                    <span> +9749650727</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages :</span>
+                                </div>
+                                <p>
+                                    <span> English, Hindi, Bengali</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://www.facebook.com/share/19kwxviALW/" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/ig__sri_jan" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/srijansinha" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/XYNOS7" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+
+                                <a href="Profile.pdf" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+
+                                <button class="send-button" type="submit">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                  </button>
+                                  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-moon"></i>
+    </div>
+    <script src="app.js"></script>
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const skills = {
+            html: "80%",
+            css: "95%",
+            js: "75%",
+            react: "60%",
+            node: "87%",
+            python: "70%"
+          };
+      
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                // Animate each skill bar
+                for (const skill in skills) {
+                  const bar = document.querySelector(`.progress span.${skill}`);
+                  if (bar && bar.style.width !== skills[skill]) {
+                    bar.style.width = skills[skill];
+                  }
+                }
+                // Optional: unobserve if you want animation only once
+                // observer.unobserve(entry.target);
+              } else {
+                // Reset width when user scrolls away (if you want re-animate each time)
+                for (const skill in skills) {
+                  const bar = document.querySelector(`.progress span.${skill}`);
+                  if (bar) bar.style.width = '0%';
+                }
+              }
+            });
+          }, {
+            threshold: 0.3, // 30% visible triggers it
+          });
+      
+          const aboutStats = document.querySelector(".about-stats");
+          if (aboutStats) {
+            observer.observe(aboutStats);
+          }
+        });
+
+
+      </script>
+            
+</body>
+</html>
