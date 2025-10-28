@@ -5,8 +5,8 @@
   list-style: none;
 }
 
-*::-webkit-scrollbar{
-   display: none;
+*::-webkit-scrollbar {
+  display: none;
 }
 
 :root {
@@ -22,7 +22,7 @@
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
 }
 
 .light-mode {
@@ -217,7 +217,7 @@ section {
 }
 
 .header-content .left-header .image img {
-  border-radius: 60% 40% 73% 27% / 38% 69% 31% 62% ;
+  border-radius: 60% 40% 73% 27% / 38% 69% 31% 62%;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -276,13 +276,34 @@ section {
 }
 
 /* Custom token colors */
-.pink { color: #ff79c6; }         /* const, = */
-.yellow { color: #f1fa8c; }       /* &&, >= */
-.orange { color: #ffb86c; }       /* function, return, true, 5 */
-.blue { color: #8be9fd; }         /* this */
-.green { color: #50fa7b; }        /* hireable */
-.white { color: #f8f8f2; }        /* keys like name, skills */
-.offwhite { color: #cfcfcf; }     /* symbols: () {} [] '' , ; */
+.pink {
+  color: #ff79c6;
+}
+/* const, = */
+.yellow {
+  color: #f1fa8c;
+}
+/* &&, >= */
+.orange {
+  color: #ffb86c;
+}
+/* function, return, true, 5 */
+.blue {
+  color: #8be9fd;
+}
+/* this */
+.green {
+  color: #50fa7b;
+}
+/* hireable */
+.white {
+  color: #f8f8f2;
+}
+/* keys like name, skills */
+.offwhite {
+  color: #cfcfcf;
+}
+/* symbols: () {} [] '' , ; */
 
 .about-container .right-about .about-item pre {
   border: 1px solid var(--color-grey-5);
@@ -636,7 +657,8 @@ section {
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
 }
-.contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+.contact-content-con .right-contact .input-control input,
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -756,7 +778,6 @@ section {
 }
 
 
-
 /*Independed components*/
 .btn-con {
   display: flex;
@@ -843,7 +864,7 @@ section {
     height: 50px;
   }
 
-  
+
   .header-content {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
@@ -1166,7 +1187,7 @@ section {
 
 
 
-/* --------- Responsive Design for Tablets & Mobiles --------- */
+/* --------- Responsive Design for Tablets & Mobiles (General) --------- */
 @media screen and (max-width: 1024px) {
   .about-container {
     grid-template-columns: 1fr; /* Stack left and right vertically */
@@ -1409,3 +1430,111 @@ section {
   }
 }
 
+/* 🎯 REFINED MOBILE FIXES (max-width: 480px)
+ * Added to fix the edge-to-edge text and bottom navigation issues.
+ */
+@media screen and (max-width: 480px) {
+
+  /* --- General Section Padding Refinement --- */
+  section {
+    padding: 2rem 1rem !important;
+    /* Reduced horizontal padding for all sections */
+  }
+
+  .container {
+    padding: 5rem 1rem !important;
+    /* Smaller horizontal padding on container */
+  }
+
+  /* --- Header Content (Directly addressing the screenshot) --- */
+
+  /* Right Header (Text Content) */
+  .header-content .right-header {
+    /* Overriding the padding-right: 0rem !important from max-width: 600px */
+    width: 100%;
+    margin: 0;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+
+  /* Main Name/Title */
+  .header-content .right-header .name {
+    font-size: 2rem !important;
+    /* Smaller title text */
+    text-align: left;
+    /* Keep text alignment to the left */
+    padding-top: 2rem;
+    width: 100%;
+    white-space: normal;
+    /* Allow text to wrap if it's too long */
+  }
+
+  /* Paragraph Text */
+  .header-content .right-header p {
+    padding: 0 0.2rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    /* Smaller body text */
+  }
+
+  /* Download CV Button Container */
+  .btn-con {
+    justify-content: flex-start;
+    /* Keep button aligned with text/rest of content */
+    width: 100%;
+    padding: 1rem 0.2rem;
+    /* Match paragraph padding */
+  }
+
+  /* --- Bottom Controls (Navigation Bar) --- */
+  .controls {
+    top: auto;
+    /* Ensure it stays at the bottom */
+    bottom: 10px;
+    /* Lift it slightly from the very bottom edge */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    /* Make it a bit narrower than full screen */
+    border-radius: 30px;
+    /* Pill shape */
+    padding: 0 0.5rem;
+  }
+
+  .controls .control {
+    margin: 0.5rem 0.2rem;
+    /* Reduce margin between control icons */
+    width: 45px;
+    height: 45px;
+  }
+
+  /* --- Main Title (Section Headings) --- */
+  .main-title h2 {
+    font-size: 2rem;
+  }
+  .main-title h2 span {
+    font-size: 2.2rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 2.8rem;
+  }
+
+  /* --- Ribbons (Scrolling Text) --- */
+  .ribbon {
+    font-size: 0.65rem;
+    /* Very small text for the ribbon */
+    height: 2em;
+    /* Smaller vertical height for the ribbon */
+  }
+
+  .ribbon-bottom {
+    bottom: 50px;
+    /* Pull ribbon up from the bottom controls/padding */
+  }
+
+  .skills-ribbon {
+    font-size: 0.7rem;
+    height: 2.2em;
+    margin-top: 1rem;
+  }
+}
